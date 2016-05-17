@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formatting</title>
+
+    <link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/lib/jquery-2.2.3.min.js"></script>
+    <script src="js/lib/clipboard.min.js"></script>
+    <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+<div id="container" >
+
+    <div class="form-group">
+        <label for="fileList">File</label>
+        <input type="file" id="fileList" name="fileList" multiple >
+    </div>
+    <div class="form-group">
+        <textarea id="display" class="form-control" rows="20" cols="50"></textarea>
+    </div>
+    <div class="row">
+        <div class="col-xs-11 col-md-11">
+            <span class="glyphicon glyphicon-refresh spinning refresh"></span>
+        </div>
+        <div class="col-xs-1 col-md-1">
+            <button id="button" type="button" class="btn btn-default btn-xs" data-clipboard-target="#display">
+                <span class="glyphicon glyphicon-copy" aria-hidden="true" ></span>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
